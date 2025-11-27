@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,10 +8,7 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <BookOpen className="w-5 h-5 text-primary" />
-            <span className="font-serif font-semibold text-foreground">
-              Não existe botão mágico
-            </span>
+            <img src={logo} alt="Mateus Westin" className="h-6 w-auto" />
           </div>
 
           <nav className="flex flex-wrap justify-center gap-6 text-sm">

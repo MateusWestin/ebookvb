@@ -35,7 +35,7 @@ const CTASection = () => {
 
           <p className="mt-6 text-sm text-primary-foreground/60 flex items-center justify-center gap-2">
             <ShieldCheck className="w-4 h-4" />
-            Compra segura • Entrega imediata • Garantia de 7 dias
+            Compra segura • Entrega imediata • PDF
           </p>
         </div>
       </div>
