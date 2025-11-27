@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const CHECKOUT_URL = "https://pay.kiwify.com.br/OAJkg6L";
 
@@ -36,10 +37,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <BookOpen className="w-5 h-5 text-primary group-hover:text-accent transition-colors" />
-            <span className="font-serif font-semibold text-foreground hidden sm:inline">
-              Não existe botão mágico
-            </span>
+            <img src={logo} alt="Mateus Westin" className="h-6 w-auto" />
           </a>
 
           {/* Desktop Nav */}

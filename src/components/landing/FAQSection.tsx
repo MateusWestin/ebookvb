@@ -20,10 +20,6 @@ const faqs = [
     answer: "Sim. O ebook é entregue em formato PDF, compatível com computadores, tablets, smartphones e e-readers. Você pode ler offline, a qualquer momento.",
   },
   {
-    question: "Tem garantia?",
-    answer: "Sim! Se em até 7 dias você sentir que o conteúdo não atendeu suas expectativas, basta solicitar o reembolso diretamente pela plataforma de pagamento.",
-  },
-  {
     question: "O livro aborda alguma linguagem de programação específica?",
     answer: "Não. O conteúdo é focado em princípios, metodologias e boas práticas que se aplicam a qualquer stack. Seja você dev front-end, back-end, full-stack ou designer — o conhecimento é transferível.",
   },
