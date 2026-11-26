@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# Não existe botão mágico — Landing page do e-book
 
-## Project info
+Página de vendas do e-book **_Não existe botão mágico_**, de Mateus Westin. O livro mostra o que os "gurus" não contam: a tecnologia de IA só funciona quando existe método e processo por trás. São **20 capítulos** de conteúdo prático, em PDF, por **R$ 33,00**, com a compra feita pela Kiwify.
 
-**URL**: https://lovable.dev/projects/eb76bac3-66de-4a3a-9a16-d19b782b75ce
+🔗 **No ar:** [ebookvb.vercel.app](https://ebookvb.vercel.app)
 
-## How can I edit this code?
+![Topo da página de vendas](docs/screenshots/1-home.webp)
 
-There are several ways of editing your application.
+## Como a página funciona
 
-**Use Lovable**
+A página leva o visitante do problema até a compra, em seções:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/eb76bac3-66de-4a3a-9a16-d19b782b75ce) and start prompting.
+1. **Hero:** capa do livro, promessa, preço e botão de compra.
+2. **Benefícios:** metodologia clara e aplicável, menos retrabalho, proteção de dados, consistência em cada tela e vibe coding com responsabilidade.
+3. **Capítulos:** sumário completo dos 20 capítulos em acordeão, com o resumo de cada um.
+4. **Autor:** quem é Mateus Westin e por que escrever sobre o tema.
+5. **Prova social**, **Entrega** (compra segura, e-mail de confirmação, download do PDF e acesso vitalício), **FAQ** e chamada final.
 
-Changes made via Lovable will be committed automatically to this repo.
+Uma **caixa de compra fixa** acompanha a rolagem (no canto da tela no desktop e como barra inferior no celular), e todos os botões levam para o checkout da Kiwify.
 
-**Use your preferred IDE**
+| Sumário com caixa de compra | Celular |
+|---|---|
+| ![Capítulos](docs/screenshots/2-capitulos.webp) | <img src="docs/screenshots/3-mobile.webp" width="300" alt="Página no celular"> |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React** + TypeScript, empacotado com **Vite**
+- **Tailwind CSS** e componentes **shadcn/ui**
+- Criado no [Lovable](https://lovable.dev/projects/eb76bac3-66de-4a3a-9a16-d19b782b75ce) e publicado na Vercel
 
-Follow these steps:
+## Rodando
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install
+npm run dev      # http://localhost:8080
+npm run build    # gera dist/
 ```
 
-**Edit a file directly in GitHub**
+As alterações feitas pelo Lovable são enviadas para este repositório automaticamente, e o que for enviado para cá também aparece lá.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Onde está cada coisa
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/eb76bac3-66de-4a3a-9a16-d19b782b75ce) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+| Arquivo / pasta | Papel |
+|---|---|
+| `src/pages/Index.tsx` | Monta a página com todas as seções |
+| `src/components/landing/` | Seções da página (Hero, Benefits, Chapters, Author, SocialProof, Delivery, FAQ, CTA, StickyPurchaseBox) |
+| `src/components/ui/` | Componentes shadcn/ui |
+| `src/assets/` | Capa do e-book, logo e fotos |
